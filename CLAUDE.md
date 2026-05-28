@@ -1,4 +1,4 @@
-# CLAUDE.md — La maquinarIA Operating System
+# CLAUDE.md — La MaquinarIA Operating System
 
 ## What This Is
 

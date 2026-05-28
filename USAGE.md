@@ -1,6 +1,6 @@
-# La maquinarIA — Guía de uso para alumnos
+# La MaquinarIA — Guía de uso para alumnos
 
-> Bienvenido. Esta es **La maquinarIA**: un sistema operativo de desarrollo para Claude Code que obliga al modelo a comportarse como un ingeniero senior — planifica antes de codear, decompone en unidades verificables, audita seguridad en cada paso y entrega productos terminados con admin panel y deploy en Docker.
+> Bienvenido a **La MaquinarIA**. Acá la regla es simple: la IA no es tu herramienta, es tu empleada. Vos dirigís, ella ejecuta como un ingeniero senior — planifica, decompone, audita seguridad, entrega producto terminado con admin panel y deploy en Docker.
 
 ---
 
@@ -34,12 +34,12 @@
 
 ## Reglas de oro (no las rompas)
 
-1. **No hay código antes del plan aprobado.** Ni una línea.
-2. **Una tarea o journey a la vez.** Nunca dos en paralelo.
-3. **Documentá mientras trabajás**, no al final. `task_tracker.md`, `work_log.md`, `project_memory.md` se actualizan en el momento.
-4. **Cada feature termina con verificación end-to-end** en el navegador. Si no podés probarla como usuario, no está hecha.
-5. **Checklist de seguridad** después de cada tarea. Audit holístico antes de entregar.
-6. **Admin panel obligatorio** en todo proyecto, con manejo de credenciales en 3 niveles.
+1. **No hay código antes del plan aprobado.** Ni una línea. Si Claude empieza a tipear sin que aprobaras, frenalo.
+2. **Una cosa a la vez.** Una tarea o un journey — nunca dos en paralelo. Ahí te perdés.
+3. **Documentá mientras hacés.** No al final, no por lotes — en el momento. Si no, perdés el hilo.
+4. **Feature terminada = probada end-to-end en el navegador.** Si no la podés usar como usuario real, no está hecha. Punto.
+5. **Checklist de seguridad después de cada tarea.** Audit holístico antes de entregar. Sin excepción.
+6. **Admin panel obligatorio.** Todo proyecto lo lleva, con credenciales en 3 niveles. No negociable.
 
 ---
 
@@ -59,9 +59,13 @@ El stack y la base de datos se eligen durante el planning según tu proyecto.
 
 > *"Speed is never a priority over correctness or quality."*
 
-La maquinarIA está construida bajo la filosofía **AI First**: la IA no es una herramienta — es el empleado. Tu rol como dueño del proyecto es dirigir, validar y aprobar. El de Claude es ejecutar como ingeniero senior, no como generador de código.
+La MaquinarIA está construida bajo la filosofía **AI First**: la IA no es una herramienta — es el empleado. Tu rol como dueño del proyecto es dirigir, validar y aprobar. El de Claude es ejecutar como ingeniero senior, no como generador de código.
 
 ---
 
 *Creado por **Yami Gala** para los alumnos del programa **AI First** de [AI Biz School](https://aibizschool.com).*
 *Inspirado en **Prometeo**, el sistema multi-agente que opera el negocio de Yami 24/7.*
+
+---
+
+**Dale, vamos.** Cualquier duda, al canal de AI First. Publicar > perfeccionar — empezá.
