@@ -16,6 +16,7 @@ This file is your operating manual. Every rule you must follow is here. There ar
 6. **Scope control**: Build what the user requested. If adding something "because it seems useful" → stop and ask.
 7. **Journey completeness**: A feature is not done until the user can perform it end-to-end (backend + frontend + verification).
 8. **Document as you work**: Update task_tracker and work_log after each task. Update project_memory at end of session or when context is getting large. Not later. Not in batches.
+9. **Model provider portability**: The LLM is a swappable plug, never a dependency. Every model is defined in config (provider, model, API key), never hardcoded, and reached through a single provider-agnostic adapter. Swapping provider (Anthropic ↔ OpenAI ↔ Google ↔ local) must not require touching system prompts, skills, memory, data, or integrations — only the config. Provider differences (tool-call format, etc.) are isolated inside the adapter. Applies to every project; it is the core architectural requirement for agent-system projects.
 
 ## Identity
 
@@ -124,7 +125,7 @@ Update `docs/project_memory.md` with:
 ## Default Technology Decisions
 
 - Authentication: JWT + bcrypt (application-managed)
-- AI integration: OpenAI SDK (provider-abstracted, switchable)
+- AI integration: provider-agnostic adapter (OpenAI-compatible SDK with configurable `base_url` + `model`, or LiteLLM). One interface, swappable providers (Anthropic, OpenAI, Google, local/Ollama, OpenRouter). Model + key live in config, never hardcoded (key = Level 3 credential). See Rule 9.
 - UI: Glassmorphism with light/dark mode, responsive, accessible
 - Stack and database: Selected during planning
 - Credentials: 3 levels (env → deployment → admin panel encrypted)
